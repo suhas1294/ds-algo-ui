@@ -1,0 +1,6 @@
+https://codepen.io/stevenlewis/pen/hubpL
+
+curl -L -X GET 'https://api.github.com/repos/<user_name>/<repo_name>/git/trees/main?recursive=1' \
+-H 'Accept: application/vnd.github.v3+json' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode '{"tree":[{"path":"path","mode":"mode","type":"type","sha":"sha","content":"content"}]}='

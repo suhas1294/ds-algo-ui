@@ -1,0 +1,54 @@
+.code-block {
+    max-width: 60%;
+    min-width: 35%;
+    max-height: 65vh;
+    overflow-x: scroll;
+    padding: 0.5rem;
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        font-size: 12px;
+    }
+    .code-block {
+        min-width: 85%;
+    }
+}
+
+.code-collection {
+    max-width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    margin: 1rem 0.5rem;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.code-collection::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.code-collection::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.code-collection::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+.code-collection::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section {
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+section > h2 {
+    margin-left: 1rem;
+    color: blue;
+}

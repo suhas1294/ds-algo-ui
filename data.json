@@ -1,0 +1,89 @@
+[
+    {
+        "section_name": "Nodes",
+        "section_code_links": [
+            "/_03_linkedlist/nodes/Node.java",
+            "/_03_linkedlist/nodes/DoublyNode.java",
+            "/_06_tree/BinaryNode.java",
+            "/_11_graph/GraphNode.java",
+            "/_11_graph/_04_sssp/_00_nodes/WeightedNode.java",
+            "/_11_graph/_06_mst/UndirectedEdge.java"
+        ]
+    },
+    {
+        "section_name": "Linked list",
+        "section_code_links": [
+            "/_03_linkedlist/_01_singly_linkedlist/SinglyLinkedList.java",
+            "/_03_linkedlist/_02_circular_singly_linkedlist/SingleCircularLinkedList.java",
+            "/_03_linkedlist/_03_doubly_linkedlist/DoubleLinkedList.java",
+            "/_03_linkedlist/_04_doubly_circular_linkedlist/DoubleCircularLinkedList.java"
+        ]
+    },
+    {
+        "section_name": "Logical Data structures",
+        "section_code_links": [
+            "/_04_stack/StackByArray.java",
+            "/_04_stack/StackByLinkedList.java",
+            "/_06_tree/_01_binary_tree/_01_array/BinaryTreeByArray.java",
+            "/_06_tree/_01_binary_tree/_02_LL/BinaryTreeByLinkedList.java",
+            "/_06_tree/_02_binary_search_tree/BinarySearchTreeByLinkedList.java",
+            "/_08_trie/Trie.java",
+            "/_07_heap/HeapByArray.java",
+            "/_10_disjoint_set/DisjointSet.java"
+        ]
+    },
+    {
+        "section_name": "Sorting",
+        "section_code_links": [
+            "/_12_sorting/_01_bubble/BubbleSort.java",
+            "/_12_sorting/_02_selection/SelectionSort.java",
+            "/_12_sorting/_03_insertion/InsertionSort.java",
+            "/_12_sorting/_04_bucket/BucketSort.java",
+            "/_12_sorting/_05_merge/MergeSort.java",
+            "/_12_sorting/_06_quick/QuickSort.java",
+            "/_12_sorting/_07_heap/HeapSort.java"
+        ]
+    },
+    {
+        "section_name": "Graph - Implementation",
+        "section_code_links": [
+            "/_11_graph/_00_implementation/_01_matrix/BFSByAdjacencyMatrix.java",
+            "/_11_graph/_00_implementation/_02_linkedlist/BFSByLinkedList.java"
+        ]
+    },
+    {
+        "section_name": "Graph - Traversals",
+        "section_code_links": [
+            "/_11_graph/_01_bfs/PathFindingByBFS.java",
+            "/_11_graph/_02_dfs/DFSRecursive.java",
+            "/_11_graph/_03_topoolgical_sort/TopologicalSort.java"
+        ]
+    },
+    {
+        "section_name": "Graph - SSSP - ASSP",
+        "section_code_links": [
+            "/_11_graph/_04_sssp/_01_bfs_sssp/PathFindingByBFS.java",
+            "/_11_graph/_04_sssp/_02_dijkstra/PathFindingByDijkstra.java",
+            "/_11_graph/_04_sssp/_03_bellman_ford/PathFindingByBellmanFord.java",
+            "/_11_graph/_05_apsp/_01_floyd_Warshall/FloydWarshall.java"
+        ]
+    },
+    {
+        "section_name": "Graph - Minimum spanning tree",
+        "section_code_links": [
+            "/_11_graph/_06_mst/_01_kruskal/Kruskal.java",
+            "/_11_graph/_06_mst/_02_prims/Prims.java",
+            "/_11_graph/_04_sssp/_03_bellman_ford/PathFindingByBellmanFord.java",
+            "/_11_graph/_05_apsp/_01_floyd_Warshall/FloydWarshall.java"
+        ]
+    },
+    {
+        "section_name": "Hashing",
+        "section_code_links": [
+            "/_09_hashing/_01_direct_chaining/DirectChaining.java",
+            "/_09_hashing/_02_open_addressing/_01_linear_probing/LinearProbing.java",
+            "/_09_hashing/_02_open_addressing/_02_quadratic_probing/QuadraticProbing.java",
+            "/_09_hashing/_02_open_addressing/_03_double_hashing/DoubleHashing.java"
+        ]
+    }
+]
