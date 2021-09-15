@@ -9,7 +9,6 @@ function Problems() {
             key={section.section_name}
             name={section.section_name}
             links={section.section_code_links}
-            isGist
         />
     ))
     return (

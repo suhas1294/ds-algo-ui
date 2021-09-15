@@ -4,9 +4,18 @@ import CodeCollection from './CodeCollection'
 import useGetCode from '../hooks/use-get-code'
 import Loader from './Loader'
 
-function Section({ name, links, isGist }) {
-    const url = isGist ? GIST_BASE_URL : BASE_URL
-    const transformedLinks = links.map((link) => `${url}${link}`)
+function Section({ name, links }) {
+    let url
+    const transformedLinks = links.map((link) => {
+        if (link.includes('http')) {
+            url = ''
+        } else if (link.includes('raw')) {
+            url = GIST_BASE_URL
+        } else {
+            url = BASE_URL
+        }
+        return `${url}${link}`
+    })
     const [codeSnippets, setCodeSnippets] = useState(null)
     const getData = useGetCode(transformedLinks)
 
