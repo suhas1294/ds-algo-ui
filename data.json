@@ -24,6 +24,8 @@
         "section_code_links": [
             "/_04_stack/StackByArray.java",
             "/_04_stack/StackByLinkedList.java",
+            "/_05_queue/_02_linear_queue_array/QueueByArray.java",
+            "/_05_queue/_01_linear_array_LL/QueueByLinkedList.java",
             "/_06_tree/_01_binary_tree/_01_array/BinaryTreeByArray.java",
             "/_06_tree/_01_binary_tree/_02_LL/BinaryTreeByLinkedList.java",
             "/_06_tree/_02_binary_search_tree/BinarySearchTreeByLinkedList.java",
