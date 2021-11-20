@@ -1,0 +1,11 @@
+#search-dsa {
+    width: 95vw;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    border-width: 0 0 2px;
+}
+
+#search-dsa:focus {
+    outline: none;
+}

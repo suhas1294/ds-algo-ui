@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "question": "print a tree structure given directories and its children",
+        "questionDescription": "Deserunt nisi id eiusmod nulla occaecat est id duis culpa qui pariatur. Ex reprehenderit non irure minim dolore nisi. Id aute voluptate eu sunt nostrud. Magna dolor velit nisi exercitation pariatur reprehenderit excepteur reprehenderit cupidatat quis aute culpa. Culpa excepteur enim duis ex pariatur esse magna consectetur exercitation aliquip. Fugiat magna veniam laboris do officia do esse enim.",
+        "questionLink": "",
+        "samples": [
+            {
+                "input": "1,2,3,4,5",
+                "output": "27i43kr"
+            },
+            {
+                "input": "324,435,456,46",
+                "output": "kbhc7ayjsdf"
+            }
+        ],
+        "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
+        "solutionLogic": "test 123",
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "2pointer",
+            "linkedLIst",
+            "binarySearch"
+        ],
+        "credits": "https://gfg.com"
+    },
+    {
+        "id": "2",
+        "question": "repeated print a tree structure given directories and its children",
+        "questionDescription": "Deserunt nisi id eiusmod nulla occaecat est id duis culpa qui pariatur. Ex reprehenderit non irure minim dolore nisi. Id aute voluptate eu sunt nostrud. Magna dolor velit nisi exercitation pariatur reprehenderit excepteur reprehenderit cupidatat quis aute culpa. Culpa excepteur enim duis ex pariatur esse magna consectetur exercitation aliquip. Fugiat magna veniam laboris do officia do esse enim.",
+        "questionLink": "",
+        "samples": [
+            {
+                "input": "1,2,3,4,5",
+                "output": "27i43kr"
+            },
+            {
+                "input": "324,435,456,46",
+                "output": "kbhc7ayjsdf"
+            }
+        ],
+        "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
+        "credits": "https://gfg.com"
+    }
+]
