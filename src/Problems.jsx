@@ -45,7 +45,7 @@ function Problems() {
                 />
                 {questionList &&
                     questionList.map((question) => (
-                        <DsaCodeBlock {...question} />
+                        <DsaCodeBlock {...question} key={question.id} />
                     ))}
             </div>
         </>

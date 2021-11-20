@@ -2,7 +2,7 @@ import React from 'react'
 
 function sampleInputOutput({ samples }) {
     return samples.map((sample, index) => (
-        <div className="example-io-blk">
+        <div key={index} className="example-io-blk">
             <p>example-{index + 1}</p>
             <p>
                 <span className="label-highlight">Input</span> : {sample.input}{' '}
