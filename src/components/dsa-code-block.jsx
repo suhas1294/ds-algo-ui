@@ -45,14 +45,44 @@ function dsaCodeBlock(props) {
 
     return (
         <article id={id}>
-            <h3>{question}</h3>
-            <p className="qdesc">{questionDescription}</p>
-            {questionLink ? <p className="qlink">{questionLink}</p> : null}
-            {samples && samples.length > 0 ? (
-                <SampleInputOutputBlock samples={samples} />
-            ) : null}
+            <div className="question-details">
+                <h3>{question}</h3>
+                <p className="qdesc">{questionDescription}</p>
+                {questionLink ? <p className="qlink">{questionLink}</p> : null}
+                {samples && samples.length > 0 ? (
+                    <SampleInputOutputBlock samples={samples} />
+                ) : null}
 
-            <div className="content">
+                <div className="content">
+                    {error && showCode ? (
+                        <ErrorArticle
+                            refetchLink={solutionLink}
+                            setCode={setCodeText}
+                            setError={setError}
+                        />
+                    ) : null}
+
+                    {solutionLogic ? (
+                        <p className="solLogic">
+                            <span className="label-highlight">Logic: </span>
+                            {solutionLogic}
+                        </p>
+                    ) : null}
+                    {solutionSteps && solutionSteps.length > 0 ? (
+                        <SolutionSteps steps={solutionSteps} />
+                    ) : null}
+                    {credits ? (
+                        <>
+                            <span className="label-highlight">Credits: </span>
+                            <a target="_blank" href={credits}>
+                                {credits}
+                            </a>
+                        </>
+                    ) : null}
+                </div>
+                {tags && tags.length > 0 ? <Tags tags={tags} /> : null}
+            </div>
+            <div className="sol-details">
                 <button
                     type="button"
                     className="collapsible"
@@ -78,34 +108,7 @@ function dsaCodeBlock(props) {
                 ) : showCode && !error ? (
                     <Loader />
                 ) : null}
-
-                {error && showCode ? (
-                    <ErrorArticle
-                        refetchLink={solutionLink}
-                        setCode={setCodeText}
-                        setError={setError}
-                    />
-                ) : null}
-
-                {solutionLogic ? (
-                    <p className="solLogic">
-                        <span className="label-highlight">Logic: </span>
-                        {solutionLogic}
-                    </p>
-                ) : null}
-                {solutionSteps && solutionSteps.length > 0 ? (
-                    <SolutionSteps steps={solutionSteps} />
-                ) : null}
-                {credits ? (
-                    <>
-                        <span className="label-highlight">Credits: </span>
-                        <a target="_blank" href={credits}>
-                            {credits}
-                        </a>
-                    </>
-                ) : null}
             </div>
-            {tags && tags.length > 0 ? <Tags tags={tags} /> : null}
         </article>
     )
 }

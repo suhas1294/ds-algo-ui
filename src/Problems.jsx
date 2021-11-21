@@ -18,12 +18,17 @@ function Problems() {
     }
 
     const search = (term) => {
+        const termLowerCase = term.toLowerCase()
         if (term) {
             const filteredQuestions = questionList.filter(
                 (question) =>
-                    question.question.includes(term) ||
-                    question.questionDescription.includes(term) ||
-                    question.tags.some((word) => word.includes(term))
+                    question.question.toLowerCase().includes(termLowerCase) ||
+                    question.questionDescription
+                        .toLowerCase()
+                        .includes(termLowerCase) ||
+                    question.tags.some((word) =>
+                        word.toLowerCase().includes(termLowerCase)
+                    )
             )
             setQuestionList(filteredQuestions)
         } else {
