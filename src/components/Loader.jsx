@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import './loader.css'
 
-function Loader() {
-    return <div className="loader">Loading...</div>
-}
+const Loader = forwardRef((props, ref) => {
+    return (
+        <div ref={ref} className="loader">
+            Loading...
+        </div>
+    )
+})
 
 export default Loader
