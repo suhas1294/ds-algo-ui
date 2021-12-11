@@ -39,6 +39,9 @@ article {
 .sol-details {
     max-width: 50%;
 }
+.question-details{
+    width: 100%;
+}
 .question-details > h3 {
     text-transform: capitalize;
     font-style: italic;

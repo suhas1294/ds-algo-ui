@@ -9,6 +9,12 @@ function sampleInputOutput({ samples }) {
                 <br />
                 <span className="label-highlight">Output</span> :{' '}
                 {sample.output}
+                <br />
+                {sample.explaination ? (
+                    <>
+                        <span className="label-highlight">Explaination</span>: {sample.explaination} 
+                    </>
+                ) : null}
             </p>
         </div>
     ))
