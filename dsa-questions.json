@@ -17,7 +17,10 @@
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_01_ReverseArray.java",
         "solutionLogic": "use two pointers - one at array start and another one at array end, move both towards each other",
         "solutionSteps": [],
-        "tags": ["2pointer", "recursion"],
+        "tags": [
+            "2pointer",
+            "recursion"
+        ],
         "credits": "https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/"
     },
     {
@@ -37,8 +40,16 @@
         ],
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_02_MinMaxInArray.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1: base condition-1 : return only element if array size is 1", "step2 : base condition 2: compare only existing 2 elements in array and return min and max", "step3: split array into two and recursively call findMinMax method"],
-        "tags": ["recursion", "divideArray", "tournamentMethod"],
+        "solutionSteps": [
+            "step1: base condition-1 : return only element if array size is 1",
+            "step2 : base condition 2: compare only existing 2 elements in array and return min and max",
+            "step3: split array into two and recursively call findMinMax method"
+        ],
+        "tags": [
+            "recursion",
+            "divideArray",
+            "tournamentMethod"
+        ],
         "credits": "https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/"
     },
     {
@@ -60,30 +71,39 @@
         ],
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_03_FindKthLargestElementInArray.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1 : sort the array desending order using any nlogn algo like quick/merge sort", "step2 : return the kth element in array", "step3: Alternatively, Min/Max Heap can also be used"],
-        "tags": ["sortArray"],
+        "solutionSteps": [
+            "step1 : sort the array desending order using any nlogn algo like quick/merge sort",
+            "step2 : return the kth element in array",
+            "step3: Alternatively, Min/Max Heap can also be used"
+        ],
+        "tags": [
+            "sortArray"
+        ],
         "credits": "https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/"
     },
     {
-        "id": "id94b5b894bdab6",
-        "question": "repeated print a tree structure given directories and its children",
-        "questionDescription": "Deserunt nisi id eiusmod nulla occaecat est id duis culpa qui pariatur. Ex reprehenderit non irure minim dolore nisi. Id aute voluptate eu sunt nostrud. Magna dolor velit nisi exercitation pariatur reprehenderit excepteur reprehenderit cupidatat quis aute culpa. Culpa excepteur enim duis ex pariatur esse magna consectetur exercitation aliquip. Fugiat magna veniam laboris do officia do esse enim.",
-        "questionLink": "",
+        "id": "04",
+        "question": "Sort an array of 0s, 1s and 2s",
+        "questionDescription": "Sort an array of 0s, 1s and 2s",
+        "questionLink": "https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/",
         "samples": [
             {
-                "input": "1,2,3,4,5",
-                "output": "27i43kr"
-            },
-            {
-                "input": "324,435,456,46",
-                "output": "kbhc7ayjsdf"
+                "input": "{0, 2, 1, 2, 0}",
+                "output": "[0, 0, 1, 2, 2]"
             }
         ],
-        "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_03_FindKthLargestElementInArray.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
-        "credits": "https://gfg.com"
+        "solutionSteps": [
+            "step1 : keep 3 pointers : 0, 1, 2",
+            "step2 : while mid <= high : case 0 - swap low and mid, low++ mid ++, case 1 : mid++, case 2: swap mid and high, high --"
+        ],
+        "tags": [
+            "3pointer",
+            "dutchNationalFlag",
+            "arraySprting"
+        ],
+        "credits": "https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/"
     },
     {
         "id": "id6b6fd2d5505fa",
@@ -102,8 +122,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -123,8 +150,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -144,8 +178,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -165,8 +206,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -186,8 +234,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -207,8 +262,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -228,8 +290,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -249,8 +318,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -270,8 +346,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -291,8 +374,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -312,8 +402,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -333,8 +430,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -354,8 +458,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -375,8 +486,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -396,8 +514,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -417,8 +542,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -438,8 +570,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -459,8 +598,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -480,8 +626,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -501,8 +654,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -522,8 +682,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -543,8 +710,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -564,8 +738,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -585,8 +766,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -606,8 +794,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -627,8 +822,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -648,8 +850,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -669,8 +878,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -690,8 +906,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -711,8 +934,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -732,8 +962,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -753,8 +990,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -774,8 +1018,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -795,8 +1046,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -816,8 +1074,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -837,8 +1102,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -858,8 +1130,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -879,8 +1158,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -900,8 +1186,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -921,8 +1214,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     },
     {
@@ -942,8 +1242,15 @@
         ],
         "solutionLink": "https://gist.githubusercontent.com/suhas1294/72ae07fefdc5d3987dfba75f8eb6bf9f/raw/362fed172ec2dc5f617a8062c953b3daa911c651/DirectoryStructure.java",
         "solutionLogic": "",
-        "solutionSteps": ["step1", "step2"],
-        "tags": ["hello", "tree", "trie"],
+        "solutionSteps": [
+            "step1",
+            "step2"
+        ],
+        "tags": [
+            "hello",
+            "tree",
+            "trie"
+        ],
         "credits": "https://gfg.com"
     }
 ]
