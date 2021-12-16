@@ -92,7 +92,7 @@
                 "output": "[0, 0, 1, 2, 2]"
             }
         ],
-        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_03_FindKthLargestElementInArray.java",
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_04_Sort012.java",
         "solutionLogic": "",
         "solutionSteps": [
             "step1 : keep 3 pointers : 0, 1, 2",
