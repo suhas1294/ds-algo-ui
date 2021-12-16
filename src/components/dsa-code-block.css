@@ -4,6 +4,12 @@
     margin: 3px;
     display: inline-block;
 }
+.complexity-wrapper {
+    background-color: #fff0f0;
+    padding: 0.5rem;
+    margin: 3px;
+    display: inline-block;
+}
 
 .label-highlight {
     color: #e61074;
@@ -39,7 +45,7 @@ article {
 .sol-details {
     max-width: 50%;
 }
-.question-details{
+.question-details {
     width: 100%;
 }
 .question-details > h3 {

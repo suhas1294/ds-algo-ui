@@ -6,6 +6,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter'
 import Loader from './loader'
 import ErrorArticle from './error-article'
 import { monokaiSublime } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import Complexity from './Complexity'
 import './dsa-code-block.css'
 
 function dsaCodeBlock(props) {
@@ -24,6 +25,8 @@ function dsaCodeBlock(props) {
         solutionSteps,
         tags,
         credits,
+        time_complexity,
+        space_complexity,
     } = props
 
     const toggleCodeView = () => setShowCode((prevState) => !prevState)
@@ -61,6 +64,11 @@ function dsaCodeBlock(props) {
                             setError={setError}
                         />
                     ) : null}
+
+                    <Complexity
+                        time_complexity={time_complexity}
+                        space_complexity={space_complexity}
+                    />
 
                     {solutionLogic ? (
                         <p className="solLogic">
