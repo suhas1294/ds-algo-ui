@@ -135,5 +135,82 @@
         "credits": "https://www.geeksforgeeks.org/move-negative-numbers-beginning-positive-end-constant-extra-space/",
         "time_complexity": "O(n)",
         "space_complexity": "O(1)"
+    },
+    {
+        "id": "06",
+        "question": "Union of two unsorted arrays",
+        "questionDescription": "Given two arrays a[] and b[] of size n and m respectively. The task is to find union between these two arrays and return array length. Union of the two arrays can be defined as the set containing distinct elements from both the arrays. If there are repetitions, then only one occurrence of element should be printed in the union.",
+        "questionLink": "https://www.geeksforgeeks.org/move-negative-numbers-beginning-positive-end-constant-extra-space/",
+        "samples": [
+            {
+                "input": "a1 : { 1 2 3 4 5 }, a2: {1 2 3, 9}",
+                "output": "6",
+                "explaination": "after union, array = {1, 2, 3, 4, 5, 9} and array length would be 6"
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_06_UnionOfTwoUnsortedArrays.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "solution-1 : using hashset and hashmap",
+            "solution-2 : using array. use array index as hashkey and mark value as presence"
+        ],
+        "tags": [
+            "unsorted",
+            "union"
+        ],
+        "credits": "https://www.geeksforgeeks.org/move-negative-numbers-beginning-positive-end-constant-extra-space/",
+        "time_complexity": "O((n+m)log(n+m))",
+        "space_complexity": "O(n+m)"
+    },
+    {
+        "id": "07",
+        "question": "Cyclically rotate an array by one ",
+        "questionDescription": "Given an array, rotate the array by one position in clock-wise direction.",
+        "questionLink": "https://www.geeksforgeeks.org/c-program-cyclically-rotate-array-one/",
+        "samples": [
+            {
+                "input": "{1, 2, 3, 4, 5}",
+                "output": "{5 1 2 3 4}"
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_07_RotateArrayByOne.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "solution-1 : loop through array from last to first and transfer value to next index",
+            "solution-2 : two pointer, increment only left pointer"
+        ],
+        "tags": [
+            "2pointer",
+            "rotate"
+        ],
+        "credits": "https://www.geeksforgeeks.org/c-program-cyclically-rotate-array-one/",
+        "time_complexity": "O(n)",
+        "space_complexity": ""
+    },
+    {
+        "id": "08",
+        "question": "Kadane's Algorithm : Largest Sum Contiguous Subarray ",
+        "questionDescription": "Given an array Arr[] of N integers. Find the contiguous sub-array(containing at least one number) which has the maximum sum and return its sum.",
+        "questionLink": "https://www.geeksforgeeks.org/c-program-cyclically-rotate-array-one/",
+        "samples": [
+            {
+                "input": "{-2, -3, 4, -1, -2, 1, 5, -3}",
+                "output": " [4, -1, -2, 1, 5]"
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_08_KadanesAlgo.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "step-1 : initialise two variables - one is max sum and one more current sum",
+            "step-2 : In a single loop, update values of curSum and maxSum depending upon summation of array numbers until that point."
+        ],
+        "tags": [
+            "Kadane",
+            "subArray",
+            "dynamicProgramming"
+        ],
+        "credits": "https://www.geeksforgeeks.org/c-program-cyclically-rotate-array-one/",
+        "time_complexity": "O(n)",
+        "space_complexity": ""
     }
 ]
