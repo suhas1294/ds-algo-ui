@@ -212,5 +212,152 @@
         "credits": "https://www.geeksforgeeks.org/c-program-cyclically-rotate-array-one/",
         "time_complexity": "O(n)",
         "space_complexity": ""
+    },
+    {
+        "id": "09",
+        "question": "Minimize the max diff between heights ",
+        "questionDescription": "Given an array arr[] denoting heights of N towers and a positive integer K, you have to modify the height of each tower either by increasing or decreasing them by K only once. After modifying, height should be a non-negative integer. Find out what could be the possible minimum difference of the height of shortest and longest towers after you have modified each tower.",
+        "questionLink": "https://www.geeksforgeeks.org/c-program-cyclically-rotate-array-one/",
+        "samples": [
+            {
+                "input": "K = 2, N = 4 Arr[] = {1, 5, 8, 10}",
+                "output": "5",
+                "explaination": "The array can be modified as  {3, 3, 6, 8}. The difference between the largest and the smallest is 8-3 = 5."
+            },
+            {
+                "input": "K = 3, N = 5 Arr[] = {3, 9, 12, 16, 20}",
+                "output": "11",
+                "explaination": "The array can be modified as {6, 12, 9, 13, 17}. The difference between the largest and the smallest is 17-6 = 11. "
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_09_MinimizeMaxDiffBwHeights.java",
+        "solutionLogic": "We know minimum value when we add k to whole array---> newMin. So we need to find minimum element when we subtract k from whole array so while searching for minimum element {arr[i]-k} we should search from--->[1,arr.length-1] and similarly for maximum element we should search from---> [0,arr.length-2] so that we can check the height difference between all pairs of adjacent elements because adjacent elements will have small height difference as the array is a sorted one.",
+        "solutionSteps": [
+            "step-1 : newMax = max - k, newMin = min +k, ans = last element - first element in sorted array, take 2 temp variables : tempMax and tempMin",
+            "step-2 : loop from 0 to n-1, max is max of (newMax, ith no + k), min will be min(newMin, i'th+1 no + k",
+            "step-3 : inside loop, if curMin <=0 , ans = min(ans, curMax-curMin)"
+        ],
+        "tags": [
+            "tower",
+            "height"
+        ],
+        "credits": "https://www.geeksforgeeks.org/c-program-cyclically-rotate-array-one/",
+        "time_complexity": "O(N*logN)",
+        "space_complexity": "O(N)"
+    },
+    {
+        "id": "10",
+        "question": "Minimum number of jumps",
+        "questionDescription": "Given an array of N integers arr[] where each element represents the max number of steps that can be made forward from that element. Find the minimum number of jumps to reach the end of the array (starting from the first element). If an element is 0, then you cannot move through that element. Note: Return -1 if you can't reach the end of the array",
+        "questionLink": "https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1#",
+        "samples": [
+            {
+                "input": "{1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9} ",
+                "output": "3",
+                "explanaition": "First jump from 1st element to 2nd element with value 3. Now, from here  we jump to 5th element with value 9, and from here we will jump to last."
+            },
+            {
+                "input": "{2, 3, 1, 1, 2, 4, 2 ,0 ,1 ,1}",
+                "output": "4",
+                "explanaition": "2 to 3, 3 to 2 , 2 to 4, 4 to last"
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_10_MinJumpsInArray.java",
+        "solutionLogic": "",
+        "solutionSteps": [],
+        "tags": [
+            "array",
+            "jump"
+        ],
+        "credits": "https://www.geeksforgeeks.org/minimum-number-of-jumps-to-reach-end-of-a-given-array/",
+        "time_complexity": "O(n)",
+        "space_complexity": ""
+    },
+    {
+        "id": "11",
+        "question": "Find duplicate number",
+        "questionDescription": "Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.There is only one repeated number in nums, return this repeated number.You must solve the problem without modifying the array nums and uses only constant extra space.",
+        "questionLink": "https://leetcode.com/problems/find-the-duplicate-number/",
+        "samples": [
+            {
+                "input": "[1,3,4,2,2]",
+                "output": "2",
+                "explanaition": "First jump from 1st element to 2nd element with value 3. Now, from here  we jump to 5th element with value 9, and from here we will jump to last."
+            },
+            {
+                "input": "[3,1,3,4,2]",
+                "output": "3",
+                "explanaition": "2 to 3, 3 to 2 , 2 to 4, 4 to last"
+            },
+            {
+                "input": "[1,1,2]",
+                "output": "1",
+                "explanaition": "2 to 3, 3 to 2 , 2 to 4, 4 to last"
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_11_FindDuplicateNumberInArray.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "max = arr.length",
+            "max number that be there in array = arr.length - 1",
+            "total of numbers from 1 to n-1 is (n * (n+1)/2)",
+            "keep subtracting total from array numbers until u get negative no or a zero."
+        ],
+        "tags": [
+            "array",
+            "jump"
+        ],
+        "credits": "",
+        "time_complexity": "O(n)",
+        "space_complexity": ""
+    },
+    {
+        "id": "12",
+        "question": "merge two sorted arrays and print the result (without using third array)",
+        "questionDescription": "Given two sorted arrays arr1[] of size N and arr2[] of size M. Each array is sorted in non-decreasing order. Merge the two arrays into one sorted array in non-decreasing order without using any extra space.",
+        "questionLink": "https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1#",
+        "samples": [
+            {
+                "input": "arr1[] = {1, 3, 5, 7}, arr2[] = {0, 2, 6, 8, 9}",
+                "output": "0 1 2 3 5 6 7 8 9",
+                "explanaition": "First jump from 1st element to 2nd element with value 3. Now, from here  we jump to 5th element with value 9, and from here we will jump to last."
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_12_MergeWithoutExtraSpace.java",
+        "solutionLogic": "merge sort logic",
+        "solutionSteps": [],
+        "tags": [
+            "mergeSort"
+        ],
+        "credits": "",
+        "time_complexity": "O(nlogn)",
+        "space_complexity": ""
+    },
+    {
+        "id": "13",
+        "question": "merge intervals",
+        "questionDescription": "Given an array of intervals where intervals[i] = [start(i), end(i)], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.",
+        "questionLink": "https://leetcode.com/problems/merge-intervals/",
+        "samples": [
+            {
+                "input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
+                "output": "[[1,6],[8,10],[15,18]]",
+                "explanaition": "Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]."
+            },
+            {
+                "input": "intervals = [[1,4],[4,5]]",
+                "output": "[[1,5]]",
+                "explanaition": "Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]."
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_13_MergeIntervals.java",
+        "solutionLogic": "",
+        "solutionSteps": [],
+        "tags": [
+            "mergeSort"
+        ],
+        "credits": "",
+        "time_complexity": "",
+        "space_complexity": ""
     }
 ]
