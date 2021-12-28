@@ -30,7 +30,7 @@ function Problems() {
     const search = (term) => {
         const termLowerCase = term.toLowerCase().trim()
         if (term) {
-            const filteredQuestions = questionList.filter(
+            const filteredQuestions = dsaQuestions.filter(
                 (question) =>
                     question.question.toLowerCase().includes(termLowerCase) ||
                     question.questionDescription
@@ -42,7 +42,7 @@ function Problems() {
             )
             setQuestionList(filteredQuestions)
         } else {
-            setQuestionList(dsaQuestions.slice(0, RECORD_COUNT))
+            setQuestionList(dsaQuestions)
         }
     }
 
