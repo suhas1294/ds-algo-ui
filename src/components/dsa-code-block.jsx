@@ -51,7 +51,11 @@ function dsaCodeBlock(props) {
             <div className="question-details">
                 <h3>{question}</h3>
                 <p className="qdesc">{questionDescription}</p>
-                {questionLink ? <p className="qlink">{questionLink}</p> : null}
+                {questionLink ? (
+                    <a href={questionLink} target="_blank" className="qlink">
+                        Question Link
+                    </a>
+                ) : null}
                 {samples && samples.length > 0 ? (
                     <SampleInputOutputBlock samples={samples} />
                 ) : null}
@@ -65,10 +69,12 @@ function dsaCodeBlock(props) {
                         />
                     ) : null}
 
-                    <Complexity
-                        time_complexity={time_complexity}
-                        space_complexity={space_complexity}
-                    />
+                    {time_complexity || space_complexity ? (
+                        <Complexity
+                            time_complexity={time_complexity}
+                            space_complexity={space_complexity}
+                        />
+                    ) : null}
 
                     {solutionLogic ? (
                         <p className="solLogic">

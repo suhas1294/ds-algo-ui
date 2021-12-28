@@ -14,7 +14,9 @@
 .label-highlight {
     color: #e61074;
 }
-
+.qlink {
+    display: block;
+}
 .dsa-code-block-nodisplay {
     display: none;
 }

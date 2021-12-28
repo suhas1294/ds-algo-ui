@@ -254,12 +254,12 @@
             {
                 "input": "{1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9} ",
                 "output": "3",
-                "explanaition": "First jump from 1st element to 2nd element with value 3. Now, from here  we jump to 5th element with value 9, and from here we will jump to last."
+                "explaination": "First jump from 1st element to 2nd element with value 3. Now, from here  we jump to 5th element with value 9, and from here we will jump to last."
             },
             {
                 "input": "{2, 3, 1, 1, 2, 4, 2 ,0 ,1 ,1}",
                 "output": "4",
-                "explanaition": "2 to 3, 3 to 2 , 2 to 4, 4 to last"
+                "explaination": "2 to 3, 3 to 2 , 2 to 4, 4 to last"
             }
         ],
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_10_MinJumpsInArray.java",
@@ -282,17 +282,17 @@
             {
                 "input": "[1,3,4,2,2]",
                 "output": "2",
-                "explanaition": "First jump from 1st element to 2nd element with value 3. Now, from here  we jump to 5th element with value 9, and from here we will jump to last."
+                "explaination": "First jump from 1st element to 2nd element with value 3. Now, from here  we jump to 5th element with value 9, and from here we will jump to last."
             },
             {
                 "input": "[3,1,3,4,2]",
                 "output": "3",
-                "explanaition": "2 to 3, 3 to 2 , 2 to 4, 4 to last"
+                "explaination": "2 to 3, 3 to 2 , 2 to 4, 4 to last"
             },
             {
                 "input": "[1,1,2]",
                 "output": "1",
-                "explanaition": "2 to 3, 3 to 2 , 2 to 4, 4 to last"
+                "explaination": "2 to 3, 3 to 2 , 2 to 4, 4 to last"
             }
         ],
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_11_FindDuplicateNumberInArray.java",
@@ -320,7 +320,7 @@
             {
                 "input": "arr1[] = {1, 3, 5, 7}, arr2[] = {0, 2, 6, 8, 9}",
                 "output": "0 1 2 3 5 6 7 8 9",
-                "explanaition": "First jump from 1st element to 2nd element with value 3. Now, from here  we jump to 5th element with value 9, and from here we will jump to last."
+                "explaination": "First jump from 1st element to 2nd element with value 3. Now, from here  we jump to 5th element with value 9, and from here we will jump to last."
             }
         ],
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_12_MergeWithoutExtraSpace.java",
@@ -342,12 +342,12 @@
             {
                 "input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
                 "output": "[[1,6],[8,10],[15,18]]",
-                "explanaition": "Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]."
+                "explaination": "Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]."
             },
             {
                 "input": "intervals = [[1,4],[4,5]]",
                 "output": "[[1,5]]",
-                "explanaition": "Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]."
+                "explaination": "Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]."
             }
         ],
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_13_MergeIntervals.java",
@@ -369,17 +369,17 @@
             {
                 "input": "[1,2,3]",
                 "output": "[1,3,2]",
-                "explanaition": ""
+                "explaination": ""
             },
             {
                 "input": "[3,2,1]",
                 "output": "[1,2,3]",
-                "explanaition": ""
+                "explaination": ""
             },
             {
                 "input": "[1,1,5]",
                 "output": "[1,5,1]",
-                "explanaition": ""
+                "explaination": ""
             }
         ],
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_14_NextPermutation.java",
@@ -401,17 +401,17 @@
             {
                 "input": "N = 5, arr[] = {2, 4, 1, 3, 5}",
                 "output": "3",
-                "explanaition": "The sequence 2, 4, 1, 3, 5 has three inversions (2, 1), (4, 1), (4, 3)."
+                "explaination": "The sequence 2, 4, 1, 3, 5 has three inversions (2, 1), (4, 1), (4, 3)."
             },
             {
                 "input": "N = 5 arr[] = {2, 3, 4, 5, 6}",
                 "output": "0",
-                "explanaition": "As the sequence is already sorted so there is no inversion count."
+                "explaination": "As the sequence is already sorted so there is no inversion count."
             },
             {
                 "input": "N = 3, arr[] = {10, 10, 10}",
                 "output": "0",
-                "explanaition": "As all the elements of array are same, so there is no inversion count."
+                "explaination": "As all the elements of array are same, so there is no inversion count."
             }
         ],
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_14_NextPermutation.java",
@@ -433,12 +433,12 @@
             {
                 "input": "prices = [7,1,5,3,6,4]",
                 "output": "5",
-                "explanaition": "Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell."
+                "explaination": "Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell."
             },
             {
                 "input": "prices = [7,6,4,3,1]",
                 "output": "0",
-                "explanaition": "In this case, no transactions are done and the max profit = 0."
+                "explaination": "In this case, no transactions are done and the max profit = 0."
             }
         ],
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_16_BestTimeToBuyAndSellStock.java",
@@ -460,12 +460,12 @@
             {
                 "input": "N = 4, K = 6 arr[] = {1, 5, 7, 1}",
                 "output": "2",
-                "explanaition": "arr[0] + arr[1] = 1 + 5 = 6 and arr[1] + arr[3] = 5 + 1 = 6."
+                "explaination": "arr[0] + arr[1] = 1 + 5 = 6 and arr[1] + arr[3] = 5 + 1 = 6."
             },
             {
                 "input": "N = 4, X = 2 arr[] = {1, 1, 1, 1}",
                 "output": "6",
-                "explanaition": "Each 1 will produce sum 2 with any 1."
+                "explaination": "Each 1 will produce sum 2 with any 1."
             }
         ],
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_17_GetPairCount.java",
@@ -487,12 +487,12 @@
             {
                 "input": "n1 = 6; A = {1, 5, 10, 20, 40, 80} n2 = 5; B = {6, 7, 20, 80, 100} n3 = 8; C = {3, 4, 15, 20, 30, 70, 80, 120}",
                 "output": "20 ,80",
-                "explanaition": ""
+                "explaination": ""
             },
             {
                 "input": "N = 4, X = 2 arr[] = {1, 1, 1, 1}",
                 "output": "6",
-                "explanaition": "Each 1 will produce sum 2 with any 1."
+                "explaination": "Each 1 will produce sum 2 with any 1."
             }
         ],
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_18_FindCommonElementsIn3UnsortedArr.java",
@@ -514,12 +514,12 @@
             {
                 "input": "arr[] = {1, 2, 3, -4, -1, 4}",
                 "output": "arr[] = {-4, 1, -1, 2, 3, 4}",
-                "explanaition": ""
+                "explaination": ""
             },
             {
                 "input": "{-5, -2, 5, 2, 4, 7, 1, 8, 0, -8}",
                 "output": "{-5, 5, -2, 2, -8, 4, 7, 1, 8, 0}",
-                "explanaition": ""
+                "explaination": ""
             }
         ],
         "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_19_AlternatePositiveNegative.java",
@@ -531,5 +531,198 @@
         "credits": "https://www.geeksforgeeks.org/rearrange-array-alternating-positive-negative-items-o1-extra-space/",
         "time_complexity": " O(N*logN)",
         "space_complexity": "O(1)"
+    },
+    {
+        "id": "20",
+        "question": "Subarray with 0 sum",
+        "questionDescription": "Given an array of positive and negative numbers. Find if there is a subarray (of size at-least one) with 0 sum.",
+        "questionLink": "https://practice.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1",
+        "samples": [
+            {
+                "input": "arr[] = {4 2 -3 1 6",
+                "output": "true",
+                "explaination": "2, -3, 1 is the subarray with sum 0."
+            },
+            {
+                "input": "{4 2 0 1 6}",
+                "output": "true",
+                "explaination": "0 is one of the element in the array so there exist a subarray with sum 0."
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_20_SubArrayWithSumZero.java",
+        "solutionLogic": "",
+        "solutionSteps": [],
+        "tags": [
+            "hashset",
+            "subArray"
+        ],
+        "credits": "https://github.com/imKashyap/Final450-Solutions/blob/main/array/SubarraySumZero.java",
+        "time_complexity": "",
+        "space_complexity": ""
+    },
+    {
+        "id": "21",
+        "question": "Factorials of large numbers",
+        "questionDescription": "Given an number, find its factorial",
+        "questionLink": "https://practice.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1",
+        "samples": [],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_21_FactorialOfLargeNumber.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "step-1: Create an array ‘res[]’ of MAX size where MAX is number of maximum digits in output.",
+            "step-2: Initialize value stored in ‘res[]’ as 1 and initialize ‘res_size’ (size of ‘res[]’) as 1.",
+            "step-3: Do following for all numbers from x = 2 to n. Multiply x with res[] and update res[] and res_size to store the multiplication result.",
+            "step-4: How to multiply a number ‘x’ with the number stored in res[]? simple school mathematics",
+            "ref: https://github.com/imKashyap/Final450-Solutions/blob/main/array/LargeFactorial.java"
+        ],
+        "tags": [
+            "ArrayList"
+        ],
+        "credits": "https://www.geeksforgeeks.org/factorial-large-number/",
+        "time_complexity": "O(N^2)",
+        "space_complexity": "O(1)"
+    },
+    {
+        "id": "22",
+        "question": "Find Maximum Product subarray",
+        "questionDescription": "Given an array that contains both positive and negative integers, find the product of the maximum product subarray. Expected Time complexity is O(n) and only O(1) extra space can be used.",
+        "questionLink": "https://practice.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1",
+        "samples": [
+            {
+                "input": "{6, -3, -10, 0, 2}",
+                "output": "180  // The subarray is {6, -3, -10}"
+            },
+            {
+                "input": "{-1, -3, -10, 0, 60}",
+                "output": "60  // The subarray is {60}"
+            },
+            {
+                "input": "{-2, -40, 0, -2, -3}",
+                "output": "80  // The subarray is {-2, -40}"
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_22_MaxProductSubArray.java",
+        "solutionLogic": "",
+        "solutionSteps": [],
+        "tags": [
+            "subArray",
+            "Kadane"
+        ],
+        "credits": "https://www.geeksforgeeks.org/maximum-product-subarray/",
+        "time_complexity": "O(N^2)",
+        "space_complexity": "O(1)"
+    },
+    {
+        "id": "23",
+        "question": "Longest consequtive subsequence",
+        "questionDescription": "Given an array of positive integers. Find the length of the longest sub-sequence such that elements in the subsequence are consecutive integers, the consecutive numbers can be in any order.",
+        "questionLink": "https://www.geeksforgeeks.org/longest-consecutive-subsequence/",
+        "samples": [
+            {
+                "input": "{2,6,1,9,4,5,3}",
+                "output": "6",
+                "explaination": "The consecutive numbers here are 1, 2, 3, 4, 5, 6. These 6 numbers form the longest consecutive subsquence."
+            },
+            {
+                "input": "{1,9,3,10,4,20,2}",
+                "output": "4",
+                "explaination": "1, 2, 3, 4 is the longest consecutive subsequence."
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_23_LongestConsequtiveSubsequence.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "step-1 : Create an empty hash.",
+            "step-2 : Insert all array elements to hash.",
+            "step-3 : Do following for every element arr[i]",
+            "step-4 : Check if this element is the starting point of a subsequence. To check this, simply look for arr[i] – 1 in the hash, if not found, then this is the first element a subsequence.",
+            "step-5 : If this element is the first element, then count the number of elements in the consecutive starting with this element. Iterate from arr[i] + 1 till the last element that can be found.",
+            "step-6 : If the count is more than the previous longest subsequence found, then update this."
+        ],
+        "tags": [
+            "hashset"
+        ],
+        "credits": "https://www.geeksforgeeks.org/longest-consecutive-subsequence/",
+        "time_complexity": "",
+        "space_complexity": ""
+    },
+    {
+        "id": "24",
+        "question": "Given an array of size n and a number k, find all elements that appear more than n/k times",
+        "questionDescription": "Given an array of size n, find all elements in array that appear more than n/k times. For example, if the input arrays is {3, 1, 2, 2, 1, 2, 3, 3} and k is 4, then the output should be [2, 3]. Note that size of array is 8 (or n = 8), so we need to find all elements that appear more than 2 (or 8/4) times. There are two elements that appear more than two times, 2 and 3.",
+        "questionLink": "https://www.geeksforgeeks.org/given-an-array-of-of-size-n-finds-all-the-elements-that-appear-more-than-nk-times/",
+        "samples": [
+            {
+                "input": "{2,6,1,9,4,5,3}",
+                "output": "6",
+                "explaination": "The consecutive numbers here are 1, 2, 3, 4, 5, 6. These 6 numbers form the longest consecutive subsquence."
+            },
+            {
+                "input": "{1,9,3,10,4,20,2}",
+                "output": "4",
+                "explaination": "1, 2, 3, 4 is the longest consecutive subsequence."
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_24_FindElementInArrayNByKTimes.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "brute force: A simple method is to pick all elements one by one. For every picked element, count its occurrences by traversing the array, if count becomes more than n/k, then print the element. Time Complexity of this method would be O(n2).",
+            "optimized solution: . First, sort all elements using a O(nLogn) algorithm. Once the array is sorted, we can find all required elements in a linear scan of array. So overall time complexity of this method is O(nLogn) + O(n) which is O(nLogn).",
+            "Much more optimized solution: ",
+            "step-1: Create a temporary array of size (k-1) to store elements and their counts (The output elements are going to be among these k-1 elements). Following is structure of temporary array elements. This step takes O(k) time. ",
+            "step-2: Traverse through the input array and update temp[] (add/remove an element or increase/decrease count) for every traversed element. The array temp[] stores potential (k-1) candidates at every step. This step takes O(nk) time.",
+            "step-3: Iterate through final (k-1) potential candidates (stored in temp[]). or every element, check if it actually has count more than n/k. This step takes O(nk) time."
+        ],
+        "tags": [
+            "tetris"
+        ],
+        "credits": "https://www.geeksforgeeks.org/given-an-array-of-of-size-n-finds-all-the-elements-that-appear-more-than-nk-times/",
+        "time_complexity": "O(N^2), O(n Log n) and O(nk) respectively",
+        "space_complexity": "O(k) for most optimized soln"
+    },
+    {
+        "id": "25",
+        "question": "Maximum profit by buying and selling a share at most twice",
+        "questionDescription": "In daily share trading, a buyer buys shares in the morning and sells them on the same day. If the trader is allowed to make at most 2 transactions in a day, whereas the second transaction can only start after the first one is complete (Buy->sell->Buy->sell). Given stock prices throughout the day, find out the maximum profit that a share trader could have made.",
+        "questionLink": "https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/",
+        "samples": [
+            {
+                "input": "price[] = {10, 22, 5, 75, 65, 80}",
+                "output": "87",
+                "explaination": "Trader earns 87 as sum of 12, 75 Buy at 10, sell at 22, Buy at 5 and sell at 80"
+            },
+            {
+                "input": "price[] = {2, 30, 15, 10, 8, 25, 80}",
+                "output": "100",
+                "explaination": "Trader earns 100 as sum of 28 and 72 Buy at price 2, sell at 30, buy at 8 and sell at 80"
+            },
+            {
+                "input": "price[] = {100, 30, 15, 10, 8, 25, 80};",
+                "output": "72",
+                "explaination": "Buy at price 8 and sell at 80."
+            },
+            {
+                "input": " price[] = {90, 80, 70, 60, 50}",
+                "output": "0",
+                "explaination": "Not possible to earn."
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_25_MaxSHareProfitBuySellTwice.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "step-0: The idea is to store the maximum possible profit of every subarray and solve the problem in the following two phases.",
+            "step-1: Create a table profit[0..n-1] and initialize all values in it 0.",
+            "step-2: Traverse price[] from right to left and update profit[i] such that profit[i] stores maximum profit achievable from one transaction in subarray price[i..n-1]",
+            "step-3: Traverse price[] from left to right and update profit[i] such that profit[i] stores maximum profit such that profit[i] contains maximum achievable profit from two transactions in subarray price[0..i].",
+            "step-4: Return profit[n-1]",
+            "step-5: To do step 2, we need to keep track of the maximum price from right to left side, and to do step 3, we need to keep track of the minimum price from left to right. Why we traverse in reverse directions? The idea is to save space, in the third step, we use the same array for both purposes, maximum with 1 transaction and maximum with 2 transactions. After iteration i, the array profit[0..i] contains the maximum profit with 2 transactions, and profit[i+1..n-1] contains profit with two transactions."
+        ],
+        "tags": [
+            "dynamicProgramming",
+            "valleyPeak"
+        ],
+        "credits": "https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/",
+        "time_complexity": "O(n)",
+        "space_complexity": ""
     }
 ]

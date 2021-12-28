@@ -42,7 +42,7 @@ function Problems() {
             )
             setQuestionList(filteredQuestions)
         } else {
-            setQuestionList(questionList)
+            setQuestionList(dsaQuestions.slice(0, RECORD_COUNT))
         }
     }
 
