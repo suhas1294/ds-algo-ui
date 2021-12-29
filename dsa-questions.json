@@ -707,7 +707,7 @@
                 "explaination": "Not possible to earn."
             }
         ],
-        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_25_MaxSHareProfitBuySellTwice.java",
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_25_MaxShareProfitBuySellTwice.java",
         "solutionLogic": "",
         "solutionSteps": [
             "step-0: The idea is to store the maximum possible profit of every subarray and solve the problem in the following two phases.",
@@ -724,5 +724,345 @@
         "credits": "https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/",
         "time_complexity": "O(n)",
         "space_complexity": ""
+    },
+    {
+        "id": "26",
+        "question": "Array Subset of another array ",
+        "questionDescription": "Given two arrays: a1[0..n-1] of size n and a2[0..m-1] of size m. Task is to check whether a2[] is a subset of a1[] or not. Both the arrays can be sorted or unsorted. It may be assumed that elements in both array are distinct.",
+        "questionLink": "https://practice.geeksforgeeks.org/problems/array-subset-of-another-array2317/1",
+        "samples": [
+            {
+                "input": "a1 = {11, 1, 13, 21, 3, 7} , a2 = {11, 3, 7, 1}",
+                "output": "Yes",
+                "explaination": "a2[] is a subset of a1[]"
+            },
+            {
+                "input": " {1, 2, 3, 4, 5, 6}, {1, 2, 4}",
+                "output": "Yes",
+                "explaination": ""
+            },
+            {
+                "input": "{10, 5, 2, 23, 19}, {19, 5, 3}",
+                "output": "No",
+                "explaination": "a2[] is not a subset of a1[]"
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_26_ArraySubsetOfAnotherArray.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "step-1: Create a Frequency Table for all the elements of arr1[].",
+            "step-2: Traverse arr2[] and search for each element of arr2[] in the Frequency Table. if element is found decrease the frequency, If element frequency is not found then return 0.",
+            "step-3: If all elements are found then return 1."
+        ],
+        "tags": [
+            "hashmap",
+            "mergeSort"
+        ],
+        "credits": "https://www.geeksforgeeks.org/find-whether-an-array-is-subset-of-another-array-set-1/",
+        "time_complexity": "O(n)",
+        "space_complexity": "O(n)"
+    },
+    {
+        "id": "27",
+        "question": "Triplet Sum in Array",
+        "questionDescription": "Given an array arr of size n and an integer X. Find if there's a triplet in the array which sums up to the given integer X.",
+        "questionLink": "https://practice.geeksforgeeks.org/problems/triplet-sum-in-array-1587115621/1",
+        "samples": [
+            {
+                "input": "n = 6, X = 13 arr[] = [1 4 45 6 10 8]",
+                "output": "1",
+                "explaination": "The triplet {1, 4, 8} in the array sums up to 13."
+            },
+            {
+                "input": " n = 5, X = 10 arr[] = [1 2 4 3 6]",
+                "output": "1",
+                "explaination": "The triplet {1, 3, 6} in the array sums up to 10."
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_27_TripletSumInArray.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "step-1: Sort the given array.",
+            "step-2: Loop over the array and fix the first element of the possible triplet, arr[i].",
+            "step-3: Then fix two pointers, one at i + 1 and the other at n – 1. And look at the sum, ",
+            "step-4: If the sum is smaller than the required sum, increment the first pointer.",
+            "step-5: Else, If the sum is bigger, Decrease the end pointer to reduce the sum.",
+            "step-6: Else, if the sum of elements at two-pointer is equal to given sum then print the triplet and break."
+        ],
+        "tags": [
+            "sorting",
+            "2pointer"
+        ],
+        "credits": "https://www.geeksforgeeks.org/find-a-triplet-that-sum-to-a-given-value/",
+        "time_complexity": "O(n^2)",
+        "space_complexity": "O(1)"
+    },
+    {
+        "id": "28",
+        "question": "Trapping Rain Water",
+        "questionDescription": "Given an array arr[] of N non-negative integers representing the height of blocks. If width of each block is 1, compute how much water can be trapped between the blocks during the rainy season. ",
+        "questionLink": "https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1",
+        "samples": [
+            {
+                "input": "arr[] = {3,0,0,2,0,4}",
+                "output": "10",
+                "explaination": "refer question link"
+            },
+            {
+                "input": " {6,9,9}",
+                "output": "0",
+                "explaination": "refer question link"
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_28_TrappingRainWater.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "step-0: In the previous solution, to find the highest bar on the left and right, array traversal is needed which reduces the efficiency of the solution. To make this efficient one must pre-compute the highest bar on the left and right of every bar in linear time. Then use these pre-computed values to find the amount of water in every array element.",
+            "step-1: Create two arrays left and right of size n. create a variable max_ = INT_MIN.",
+            "step-2: Run one loop from start to end. In each iteration update max_ as max_ = max(max_, arr[i]) and also assign left[i] = max_",
+            "step-3: Update max_ = INT_MIN.",
+            "step-4: Run another loop from end to start. In each iteration update max_ as max_ = max(max_, arr[i]) and also assign right[i] = max_",
+            "step-5: Traverse the array from start to end.",
+            "step-6: The amount of water that will be stored in this column is min(a,b) – array[i],(where a = left[i] and b = right[i]) add this value to total amount of water stored",
+            "step-7: Print the total amount of water stored."
+        ],
+        "tags": [
+            "rainWater"
+        ],
+        "credits": "https://www.geeksforgeeks.org/trapping-rain-water/",
+        "time_complexity": "O(n^2)",
+        "space_complexity": "O(1)"
+    },
+    {
+        "id": "29",
+        "question": "Chocolate distribution Problem",
+        "questionDescription": "Given an array A[ ] of positive integers of size N, where each value represents the number of chocolates in a packet. Each packet can have a variable number of chocolates. There are M students, the task is to distribute chocolate packets among M students such that : 1. Each student gets exactly one packet. 2. The difference between maximum number of chocolates given to a student and minimum number of chocolates given to a student is minimum.",
+        "questionLink": "https://tools.knowledgewalls.com/online-multiline-to-single-line-converter",
+        "samples": [
+            {
+                "input": "N = 8, M = 5 A = {3, 4, 1, 9, 56, 7, 9, 12}",
+                "output": "6",
+                "explaination": "The minimum difference between maximum chocolates and minimum chocolates is 9 - 3 = 6 by choosing following M packets : {3, 4, 9, 7, 9}."
+            },
+            {
+                "input": " N = 7, M = 3 A = {7, 3, 2, 4, 9, 12, 56}",
+                "output": "2",
+                "explaination": "The minimum difference between maximum chocolates and minimum chocolates is 4 - 2 = 2 by choosing following M packets : {3, 2, 4}."
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_29_ChocolateDistribution.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "step-0: An efficient solution is based on the observation that to minimize the difference, we must choose consecutive elements from a sorted packet. ",
+            "step-1: We first sort the array arr[0..n-1], ",
+            "step-2: then find the subarray of size m with the minimum difference between the last and first elements."
+        ],
+        "tags": [
+            "chocolate"
+        ],
+        "credits": "https://www.geeksforgeeks.org/chocolate-distribution-problem/",
+        "time_complexity": "O(N*Log(N))",
+        "space_complexity": "O(1)"
+    },
+    {
+        "id": "30",
+        "question": "Smallest subarray with sum greater than a given value",
+        "questionDescription": "Given an array of integers and a number x, find the smallest subarray with sum greater than the given value.",
+        "questionLink": "https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/",
+        "samples": [
+            {
+                "input": "arr[] = {1, 4, 45, 6, 0, 19} x  =  51",
+                "output": "3",
+                "explaination": "Minimum length subarray is {4, 45, 6}"
+            },
+            {
+                "input": "arr[] = {1, 10, 5, 2, 7} x  = 9",
+                "output": "1",
+                "explaination": "Minimum length subarray is {10}"
+            },
+            {
+                "input": "arr[] = {1, 11, 100, 1, 0, 200, 3, 2, 1, 250} x = 280",
+                "output": "4",
+                "explaination": "Minimum length subarray is {100, 1, 0, 200}"
+            },
+            {
+                "input": "arr[] = {1, 2, 4} x = 8",
+                "output": " Not Possible",
+                "explaination": "Whole array sum is smaller than 8."
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_30_SmallestSubArrayWithSumGTK.java",
+        "solutionLogic": "",
+        "solutionSteps": [],
+        "tags": [
+            "subArray"
+        ],
+        "credits": "https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/",
+        "time_complexity": "O(N)",
+        "space_complexity": ""
+    },
+    {
+        "id": "31",
+        "question": "Three way partitioning ",
+        "questionDescription": "Given an array of size n and a range [a, b]. The task is to partition the array around the range such that array is divided into three parts. 1) All elements smaller than a come first. 2) All elements in range a to b come next. 3) All elements greater than b appear in the end. The individual elements of three sets can appear in any order. You are required to return the modified array.",
+        "questionLink": "https://practice.geeksforgeeks.org/problems/three-way-partitioning/1",
+        "samples": [
+            {
+                "input": "n = 5 A[] = {1, 2, 3, 3, 4} [a, b] = [1, 2]",
+                "output": "1",
+                "explaination": "One possible arrangement is: {1, 2, 3, 3, 4}. If you return a valid arrangement, output will be 1."
+            },
+            {
+                "input": "n = 3 A[] = {1, 2, 3} [a, b] = [1, 3]",
+                "output": "1",
+                "explaination": "One possible arrangement is: {1, 2, 3}. If you return a valid arrangement, output will be 1."
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_31_ThreeWayPartitioning.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "step-1: An efficient solution is based on Dutch National Flag based QuickSort. ",
+            "step-2: We traverse given array elements from left. ",
+            "step-3: We keep track of two pointers, 'start' to store next position of smaller element (smaller than range) from beginning; and 'end' to store next position of greater element from end. "
+        ],
+        "tags": [
+            "partition",
+            "dutchNationalFlag"
+        ],
+        "credits": "https://www.geeksforgeeks.org/three-way-partitioning-of-an-array-around-a-given-range/",
+        "time_complexity": "O(N)",
+        "space_complexity": "O(1)"
+    },
+    {
+        "id": "32",
+        "question": "Minimum swaps and K together",
+        "questionDescription": "Given an array arr of n positive integers and a number k. One can apply a swap operation on the array any number of times, i.e choose any two index i and j (i < j) and swap arr[i] , arr[j] . Find the minimum number of swaps required to bring all the numbers less than or equal to k together, i.e. make them a contiguous subarray.",
+        "questionLink": "https://practice.geeksforgeeks.org/problems/minimum-swaps-required-to-bring-all-elements-less-than-or-equal-to-k-together4847/1",
+        "samples": [
+            {
+                "input": "arr[ ] = {2, 1, 5, 6, 3}, k=3",
+                "output": "1",
+                "explaination": "To bring elements 2, 1, 3 together, swap index 2 with 4 (0-based indexing), i.e. element arr[2] = 5 with arr[4] = 3 such that final array will be- arr[] = {2, 1, 3, 6, 5}"
+            },
+            {
+                "input": "{2, 7, 9, 5, 8, 7, 4}, k=6",
+                "output": "2",
+                "explaination": "To bring elements 2, 5, 4 together, swap index 0 with 2 (0-based indexing) and index 4 with 6 (0-based indexing) such that final array will be- arr[] = {9, 7, 2, 5, 4, 7, 8}"
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_32_MinimumSwapsAndKTogether.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "Bruteforce : s1: A simple solution is to first count all elements less than or equals to k(say ‘good’). ",
+            "Bruteforce : s2: Now traverse for every sub-array and swap those elements whose value is greater than k. ",
+            "Bruteforce : s3: Time complexity of this approach is O(n2)",
+            "Optimized : s1: A simple approach is to use two pointer technique and sliding window.  ",
+            "Optimized : s2: Find count of all elements which are less than or equals to ‘k’. Let’s say the count is ‘cnt’",
+            "Optimized : s3: Using two pointer technique for window of length ‘cnt’, each time keep track of how many elements in this range are greater than ‘k’. Let’s say the total count is ‘bad’.",
+            "Optimized : s4: Repeat step 2, for every window of length ‘cnt’ and take minimum of count ‘bad’ among them. This will be the final answer."
+        ],
+        "tags": [
+            "2pointer",
+            "slidingWindow"
+        ],
+        "credits": "https://www.geeksforgeeks.org/minimum-swaps-required-bring-elements-less-equal-k-together/",
+        "time_complexity": "O(N)",
+        "space_complexity": "O(1)"
+    },
+    {
+        "id": "33",
+        "question": "Minimum operations required to make array palindrome",
+        "questionDescription": "Given a Integer array A[] of n elements. Your task is to complete the function PalinArray. Which will return 1 if all the elements of the Array are palindrome otherwise it will return 0.The first line of input contains an integer denoting the no of test cases. Then T test cases follow. Each test case contains two lines. The first line of input contains an integer n denoting the size of the arrays. In the second line are N space separated values of the array A[]. For each test case in a new line print the required result.",
+        "questionLink": "https://practice.geeksforgeeks.org/problems/palindromic-array-1587115620/1",
+        "samples": [
+            {
+                "input": "2 \n 5 \n 111 222 333 444 555 \n 3 \n 121 131 20",
+                "output": "1 \n 0",
+                "explaination": "For First test case. n=5; A[0] = 111 (palindrome number.) A[1] = 222 (palindrome number.) A[2] = 333 (palindrome number.) A[3] = 444 (palindrome number.) A[4] = 555 (palindrome number.) As all numbers are palindrome so This will return 1."
+            },
+            {
+                "input": "arr[] = {15, 4, 15}",
+                "output": "0",
+                "explaination": "Array is already a palindrome. So we do not need any merge operation."
+            },
+            {
+                "input": "arr[] = {1, 4, 5, 1}",
+                "output": "1",
+                "explaination": "We can make given array palindrome with minimum one merging (merging 4 and 5 to make 9)"
+            },
+            {
+                "input": "arr[] = {11, 14, 15, 99}",
+                "output": "3",
+                "explaination": "We need to merge all elements to make a palindrome."
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_33_MinOpsToMakeArrayPalindrome.java",
+        "solutionLogic": "",
+        "solutionSteps": [
+            "case-1: If arr[i] == arr[j], then there is no need to do any merging operations at index i or index j. Our answer in this case will be f(i+1, j-1).",
+            "case-1: Else, we need to do merging operations. Following cases arise.",
+            "case-2: If arr[i] > arr[j], then we should do merging operation at index j. We merge index j-1 and j, and update arr[j-1] = arr[j-1] + arr[j]. Our answer in this case will be 1 + f(i, j-1).",
+            "case-2: For the case when arr[i] < arr[j], update arr[i+1] = arr[i+1] + arr[i]. Our answer in this case will be 1 + f(i+1, j).",
+            "case-3: Our answer will be f(0, n-1), where n is the size of array arr[].",
+            "Sumary: Implement Two pointers, keep count of total merge operations done till now.",
+        ],
+        "tags": [
+            "2pointer",
+            "mergeSort"
+        ],
+        "credits": "https://www.geeksforgeeks.org/find-minimum-number-of-merge-operations-to-make-an-array-palindrome/",
+        "time_complexity": "O(N)",
+        "space_complexity": ""
+    },
+    {
+        "id": "34",
+        "question": "Median of two sorted arrays of same sizes",
+        "questionDescription": "There are 2 sorted arrays A and B of size n each. Write an algorithm to find the median of the array obtained after merging the above 2 arrays(i.e. array of length 2n). The complexity should be O(log(n)). ",
+        "questionLink": "https://www.geeksforgeeks.org/median-of-two-sorted-arrays/",
+        "samples": [
+            {
+                "input": "ar1[] = {1, 12, 15, 26, 38}; ar2[] = {2, 13, 17, 30, 45};",
+                "output": "16",
+                "explaination": "After Merging two arrays, we get {1,2,12,13,15,17,26, 30,38,45}, Middle two elements are 15 and 17, avg is 16"
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_34_MedianOfTwoSortedArraysSameSize.java",
+        "solutionLogic": "",
+        "solutionSteps": [],
+        "tags": [
+            "divideAndConquer",
+            "mergeSort"
+        ],
+        "credits": "https://www.geeksforgeeks.org/median-of-two-sorted-arrays/",
+        "time_complexity": "O(log N)",
+        "space_complexity": "O(1)"
+    },
+    {
+        "id": "35",
+        "question": "Median of two sorted arrays of different sizes",
+        "questionDescription": "Given two sorted arrays, a[] and b[], the task is to find the median of these sorted arrays, in O(log n + log m) time complexity, when n is the number of elements in the first array, and m is the number of elements in the second array.  ",
+        "questionLink": "https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/",
+        "samples": [
+            {
+                "input": "ar1[] = {-5, 3, 6, 12, 15} ar2[] = {-12, -10, -6, -3, 4, 10}",
+                "output": "3",
+                "explaination": "The merged array is : ar3[] = {-12, -10, -6, -5 , -3, 3, 4, 6, 10, 12, 15}, So the median of the merged array is 3"
+            },
+            {
+                "input": "ar1[] = {2, 3, 5, 8}, ar2[] = {10, 12, 14, 16, 18, 20}",
+                "output": "11",
+                "explaination": "The merged array is : ar3[] = {2, 3, 5, 8, 10, 12, 14, 16, 18, 20} if the number of the elements are even, so there are two middle elements, take the average between the two : (10 + 12) / 2 = 11."
+            }
+        ],
+        "solutionLink": "https://raw.githubusercontent.com/suhas1294/love-babbar-450-dsa/main/src/main/java/rishi/atreya/_01_arrays/_35_MedianOfTwoSortedArraysDiffSize.java",
+        "solutionLogic": "",
+        "solutionSteps": [],
+        "tags": [
+            "binarySearch",
+            "2pointer"
+        ],
+        "credits": "https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/",
+        "time_complexity": "O(min(log n, logm))",
+        "space_complexity": "O(1)"
     }
 ]
