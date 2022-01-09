@@ -2,7 +2,7 @@ import React from 'react'
 
 function Complexity({ time_complexity, space_complexity }) {
     return (
-        <div class="complexity-wrapper">
+        <div className="complexity-wrapper">
             <p className="solLogic">
                 <span className="label-highlight">Time Complexity: </span>
                 {time_complexity}

@@ -4,3 +4,22 @@ curl -L -X GET 'https://api.github.com/repos/<user_name>/<repo_name>/git/trees/m
 -H 'Accept: application/vnd.github.v3+json' \
 -H 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode '{"tree":[{"path":"path","mode":"mode","type":"type","sha":"sha","content":"content"}]}='
+
+love babbar questions split up:
+    arr 45 (1d : 35, 2d : 10)
+    string : 43
+    searching and sorting : 36
+    linkedlist : 36
+    graph : 44
+
+    greedy : 35
+    dp : 60
+    back tracking : 19
+
+    stacks and queues : 38
+    btree : 35
+    binary search tree : 22
+    heap : 18
+    trie : 6
+
+    bit manipulation: 10

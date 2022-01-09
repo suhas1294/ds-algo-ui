@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react'
-import dsaQuestions from '../dsa-questions.json'
-import NavBar from './NavBar'
-import DsaCodeBlock from './components/dsa-code-block'
-import Loader from './components/Loader'
+import arrayQuestions from '../../lb_01_arrays.json'
+import NavBar from '../components/NavBar'
+import DsaCodeBlock from '../components/dsa-code-block'
+import Loader from '../components/Loader'
 import './problems.css'
 
 /* TODO: This component is used to fetch "standard 450 dsa questions compiled by Love babbar"
@@ -12,7 +12,7 @@ instead of renaming it appropriately due to time crunch. */
 function Problems() {
     const RECORD_COUNT = 10
     const [questionList, setQuestionList] = useState(
-        dsaQuestions.slice(0, RECORD_COUNT)
+        arrayQuestions.slice(0, RECORD_COUNT)
     )
 
     const loaderRef = useRef()
@@ -30,7 +30,7 @@ function Problems() {
     const search = (term) => {
         const termLowerCase = term.toLowerCase().trim()
         if (term) {
-            const filteredQuestions = dsaQuestions.filter(
+            const filteredQuestions = arrayQuestions.filter(
                 (question) =>
                     question.question.toLowerCase().includes(termLowerCase) ||
                     question.questionDescription
@@ -42,7 +42,7 @@ function Problems() {
             )
             setQuestionList(filteredQuestions)
         } else {
-            setQuestionList(dsaQuestions)
+            setQuestionList(arrayQuestions)
         }
     }
 
@@ -50,11 +50,11 @@ function Problems() {
         entries.forEach((entry) => {
             if (
                 entry.isIntersecting &&
-                questionList.length < dsaQuestions.length
+                questionList.length < arrayQuestions.length
             ) {
                 setQuestionList((prevQList) => [
                     ...prevQList,
-                    ...dsaQuestions.slice(
+                    ...arrayQuestions.slice(
                         prevQList.length,
                         prevQList.length + RECORD_COUNT
                     ),
@@ -99,7 +99,7 @@ function Problems() {
                                 .slice(2)}`}
                         />
                     ))}
-                {questionList.length < dsaQuestions.length ? (
+                {questionList.length < arrayQuestions.length ? (
                     <Loader ref={loaderRef} />
                 ) : null}
             </div>

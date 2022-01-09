@@ -11,9 +11,14 @@ function NavBar() {
                         Ds-ALGO
                     </NavLink>
                 </li>
-                <li>
+                {/* <li>
                     <NavLink className="nav-link" to="/problems">
                         Problems
+                    </NavLink>
+                </li> */}
+                <li>
+                    <NavLink className="nav-link" to="/love-babbar-450-dsa">
+                        Love Babbar
                     </NavLink>
                 </li>
             </ul>

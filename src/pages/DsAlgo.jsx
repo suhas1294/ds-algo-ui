@@ -1,7 +1,7 @@
 import React from 'react'
-import data from '../data.json'
-import Section from './components/Section'
-import NavBar from './NavBar'
+import data from '../../data.json'
+import Section from '../components/Section'
+import NavBar from '../components/NavBar'
 
 function DsAlgo() {
     const allUi = data.map((section) => (
