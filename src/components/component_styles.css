@@ -14,12 +14,22 @@
     padding: 0.5rem;
 }
 
+#relacs-problems-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 450px) {
     body {
         font-size: 12px;
     }
     .code-block {
         min-width: 85%;
+    }
+    .relacs-code-block {
+        margin-bottom: 0.75rem;
     }
 }
 

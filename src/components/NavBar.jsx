@@ -21,6 +21,11 @@ function NavBar() {
                         Love Babbar
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink className="nav-link" to="/relacs">
+                        Relacs
+                    </NavLink>
+                </li>
             </ul>
         </div>
     )
