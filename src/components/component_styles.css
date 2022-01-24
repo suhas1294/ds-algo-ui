@@ -6,6 +6,22 @@
     padding: 0.5rem;
 }
 
+.relacs-code-block {
+    max-width: 90%;
+    min-width: 75%;
+    max-height: 80vh;
+    overflow-x: scroll;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+#relacs-problems-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 450px) {
     body {
         font-size: 12px;
