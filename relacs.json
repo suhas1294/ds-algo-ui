@@ -1,0 +1,8 @@
+{
+    "questions": [
+        "https://raw.githubusercontent.com/suhas1294/scaler-bootcamp/main/src/main/java/_02_intermediate/_2022_01_17/sub_arrays/assignments/MaxSubArrayLimit.java",
+        "https://raw.githubusercontent.com/suhas1294/scaler-bootcamp/main/src/main/java/_02_intermediate/_2022_01_17/sub_arrays/assignments/MaxSumContigiousSubArray.java",
+        "https://raw.githubusercontent.com/suhas1294/scaler-bootcamp/main/src/main/java/_02_intermediate/_2022_01_17/sub_arrays/assignments/SubArrayWithLeastAvg.java",
+        "https://raw.githubusercontent.com/suhas1294/scaler-bootcamp/main/src/main/java/_02_intermediate/_2022_01_17/sub_arrays/assignments/SumOfAllSubArrays.java"
+    ]
+}

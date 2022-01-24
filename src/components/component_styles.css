@@ -6,6 +6,14 @@
     padding: 0.5rem;
 }
 
+.relacs-code-block {
+    max-width: 90%;
+    min-width: 75%;
+    max-height: 80vh;
+    overflow-x: scroll;
+    padding: 0.5rem;
+}
+
 @media only screen and (max-width: 450px) {
     body {
         font-size: 12px;
