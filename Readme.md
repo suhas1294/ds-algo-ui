@@ -14,4 +14,4 @@ https://www.youtube.com/watch?v=1wDzEjXbblM&ab_channel=EsterlingAccime
 ___
 
 ## Contributing:
-Raise a Pull Request again main branch.
+Raise a Pull Request against main branch.
