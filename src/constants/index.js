@@ -1,2 +1,5 @@
 export const BASE_URL = "https://raw.githubusercontent.com/suhas1294/java-ds-algo/main/src/main/java/com/atreya"
 export const GIST_BASE_URL = "https://gist.githubusercontent.com/suhas1294/"
+export const RELACS_URL = "https://raw.githubusercontent.com/suhas1294/ds-algo-ui/scaler-problems/relacs.json"
+export const LB_URL = "https://raw.githubusercontent.com/suhas1294/ds-algo-ui/scaler-problems/love-babbar-450-dsa.json"
+export const BASICS_DS = "https://raw.githubusercontent.com/suhas1294/ds-algo-ui/scaler-problems/data.json"
